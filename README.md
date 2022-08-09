@@ -15,7 +15,7 @@ $ docker run -p 8081:8081 target-service:0.0.1-SNAPSHOT --server.port=8081
 Usage without docker:
 ```bash
 # To run balancer:
-$ ./mvnw clean spring-boot:run [-Dspring-boot.run.arguments=--target-ports="8081 8082 8083"]
+$ ./mvnw clean spring-boot:run [-Dspring-boot.run.arguments=--target.ports="8081 8082 8083"]
 # To run target:
 $ cd target-service
 $ ./mvnw clean spring-boot:run -Dspring-boot.run.arguments=--server.port=8081
